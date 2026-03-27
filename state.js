@@ -3,4 +3,5 @@ const state = {
   players: [
 
   ],
+  current: createStartMenu()
 }
