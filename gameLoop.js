@@ -8,6 +8,8 @@ function gameLoop() {
   } else if (state.screen == "startMenu") {
     startMenuControl()
     renderStartMenu()
+  } else if (state.screen == "singlePlayerPause") {
+    renderSinglePlayerPause()
   }
 
   requestAnimationFrame(gameLoop)
