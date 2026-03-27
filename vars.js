@@ -1,5 +1,5 @@
 function createStartMenu() {
   return ({
-    selected: 0
+    selected: 3
   })
 }
