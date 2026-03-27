@@ -9,6 +9,7 @@ const state = {
       up: false,
       down: false,
       enter: false,
+      escape: false,
     }
   }
 }

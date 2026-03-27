@@ -2,7 +2,10 @@ function gameLoop() {
   controlsInput()
   clearScreen()
   renderBackground()
-  if (state.screen == "startMenu") {
+  if (state.screen == "singlePlayer") {
+    singlePlayerControl()
+    renderSinglePlayer()
+  } else if (state.screen == "startMenu") {
     startMenuControl()
     renderStartMenu()
   }

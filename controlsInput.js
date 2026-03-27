@@ -25,6 +25,11 @@ function controlsInput() {
   } else {
     state.input.player1.enter = false
   }
+  if (input.keys.has("Escape")) {
+    state.input.player1.escape = true
+  } else {
+    state.input.player1.escape = false
+  }
 
   // player 2
   if (input.keys.has('ArrowUp')) {
