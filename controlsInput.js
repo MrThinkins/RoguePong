@@ -20,6 +20,11 @@ function controlsInput() {
   } else {
     state.input.player1.down = false
   }
+  if (input.keys.has("Enter")) {
+    state.input.player1.enter = true
+  } else {
+    state.input.player1.enter = false
+  }
 
   // player 2
   if (input.keys.has('ArrowUp')) {
