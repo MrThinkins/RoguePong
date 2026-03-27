@@ -11,10 +11,16 @@ function controlsInput() {
   // player 1
 
   if (input.keys.has('KeyW')) {
-    console.log('w')
+    // console.log('w')
+    state.input.player1.up = true
+  } else {
+    state.input.player1.up = false
   }
   if (input.keys.has('KeyS')) {
-    console.log('s')
+    // console.log('s')
+    state.input.player1.down = true
+  } else {
+    state.input.player1.down = false
   }
 
   // player 2

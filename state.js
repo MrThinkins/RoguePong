@@ -3,5 +3,11 @@ const state = {
   players: [
 
   ],
-  current: createStartMenu()
+  current: createStartMenu(),
+  input: {
+    player1: {
+      up: false,
+      down: false,
+    }
+  }
 }

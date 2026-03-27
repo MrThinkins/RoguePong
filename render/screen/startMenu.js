@@ -24,12 +24,9 @@ function renderStartMenu() {
     ctx.fillRect(textPos.singlePlayer.x - 15, textPos.singlePlayer.y + 25, 475, -100)
   } else if (state.current.selected == 1) {
     ctx.fillRect(textPos.twoPlayer.x - 15, textPos.twoPlayer.y + 25, 410, -100)
-  } else if (state.current.selected ==2) {
+  } else if (state.current.selected == 2) {
     ctx.fillRect(textPos.options.x - 15, textPos.options.y + 25, 290, -100)
-  } else {
-    state.current.selected = 0
   }
-
 
   ctx.fillStyle = "white"
   ctx.font = "75px Arial"

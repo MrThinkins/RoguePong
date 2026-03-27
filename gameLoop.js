@@ -3,6 +3,7 @@ function gameLoop() {
   clearScreen()
   renderBackground()
   if (state.screen == "startMenu") {
+    startMenuControl()
     renderStartMenu()
   }
 

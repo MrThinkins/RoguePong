@@ -1,5 +1,6 @@
 function createStartMenu() {
   return ({
-    selected: 3
+    selected: 0,
+    timeTillNextInput: 0,
   })
 }
