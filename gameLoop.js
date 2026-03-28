@@ -9,6 +9,7 @@ function gameLoop() {
     startMenuControl()
     renderStartMenu()
   } else if (state.screen == "singlePlayerPause") {
+    singlePlayerMenuControl()
     renderSinglePlayerPause()
   }
 
