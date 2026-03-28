@@ -1,9 +1,9 @@
 const state = {
-  screen: "singlePlayerPause",
+  screen: "startMenu",
   players: [
 
   ],
-  current: createSinglePlayerPause(),
+  current: createStartMenu(),
   input: {
     player1: {
       up: false,
