@@ -1,9 +1,10 @@
 const state = {
-  screen: "startMenu",
+  screen: "singlePlayer",
   players: [
 
   ],
   current: createStartMenu(),
+  game: createSinglePlayer(),
   input: {
     player1: {
       up: false,
