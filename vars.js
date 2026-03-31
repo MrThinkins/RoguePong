@@ -15,7 +15,7 @@ function createSinglePlayer() {
         y: gameHeight / 2,
         size: 10,
         color: "white",
-        speed: 2,
+        speed: 8,
         xMove: 2,
         yMove: 2,
       }
