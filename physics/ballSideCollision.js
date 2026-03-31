@@ -1,0 +1,17 @@
+function ballSideCollision(ball) {
+  if (ball.x + ball.size >= gameWidth) {
+    ball.xMove *= -1
+  }
+
+  if (ball.y + ball.size >= gameHeight) {
+    ball.yMove *= -1
+  } else if (ball.y - ball.size <= 0) {
+    ball.yMove *= -1
+  }
+
+
+  // temp code to bounce off right side
+  if (ball.x - ball.size <= 0) {
+    ball.xMove *= -1
+  }
+}

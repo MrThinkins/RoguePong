@@ -3,6 +3,7 @@ function gameLoop() {
   clearScreen()
   renderBackground()
   if (state.screen == "singlePlayer") {
+    moveBalls()
     singlePlayerControl()
     renderSinglePlayer()
   } else if (state.screen == "startMenu") {
