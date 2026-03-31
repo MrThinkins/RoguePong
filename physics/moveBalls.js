@@ -3,6 +3,6 @@ function moveBalls(x, y) {
     ball = state.game.balls[i]
     ball.x += ball.xMove * ball.speed
     ball.y += ball.yMove * ball.speed
-    ballSideCollision(ball)
+    ballSideCollision(ball, i)
   }
 }
