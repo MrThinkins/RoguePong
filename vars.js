@@ -9,12 +9,15 @@ function createStartMenu() {
 
 function createSinglePlayer() {
   return ({
-    ball: {
-      x: gameWidth / 2,
-      y: gameHeight / 2,
-      size: 10,
-      color: "white"
-    }
+    balls: [
+      {
+        x: gameWidth / 2,
+        y: gameHeight / 2,
+        size: 10,
+        color: "white"
+      }
+    ]
+    
   })
 }
 

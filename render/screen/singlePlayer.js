@@ -3,5 +3,10 @@ function renderSinglePlayer() {
   ctx.font = "100px Arial"
   ctx.fillText("singlePlayerScreen", gameWidth / 2 - 460, gameHeight / 2 - 300)
 
-  drawBall(state.game.ball.x, state.game.ball.y, state.game.ball.size, state.game.ball.color)
+  // for (ball in state.game.balls) {
+  for (let i = 0; i < state.game.balls.length; i++) {
+    ball = state.game.balls[i]
+    console.log(ball)
+    drawBall(ball.x, ball.y, ball.size, ball.color)
+  }
 }
