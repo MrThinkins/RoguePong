@@ -20,6 +20,16 @@ function createSinglePlayer() {
         yMove: 2,
       }
     ],
+    paddles: [
+      {
+        x: 50,
+        y: gameHeight / 2,
+        width: 10,
+        height: 85,
+        speed: 4,
+        color: 'white'
+      }
+    ]
     
   })
 }

@@ -3,6 +3,7 @@ function gameLoop() {
   clearScreen()
   renderBackground()
   if (state.screen == "singlePlayer") {
+    drawPaddles()
     moveBalls()
     singlePlayerControl()
     renderSinglePlayer()
