@@ -18,11 +18,7 @@ function ballSideCollision(ball, index) {
     onBounce(index)
   }
 
-
-  // temp code to bounce off right side
   if (ball.x - ball.size <= 0) {
     roundEnd()
-    // ball.xMove *= -1
-    // bounceOffset(index)
   }
 }
