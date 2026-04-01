@@ -1,7 +1,4 @@
 function renderSinglePlayer() {
-  
-
-  // for (ball in state.game.balls) {
   for (let i = 0; i < state.game.balls.length; i++) {
     ball = state.game.balls[i]
     drawBall(ball.x, ball.y, ball.size, ball.color)
@@ -17,5 +14,4 @@ function renderSinglePlayer() {
   ctx.font = "50px Arial"
   
   ctx.fillText(scoreToPassText, gameWidth - 650, 50)
-  
 }
