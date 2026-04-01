@@ -1,5 +1,5 @@
 const state = {
-  screen: "singlePlayer",
+  screen: "startMenu",
   players: [
 
   ],
