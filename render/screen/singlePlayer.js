@@ -12,4 +12,10 @@ function renderSinglePlayer() {
   ctx.font = "50px Arial"
   const scoreText = `Score: ${state.game.score}`
   ctx.fillText(scoreText, 10, 50)
+
+  const scoreToPassText = `Round Goal: ${state.game.scoreToPass}` 
+  ctx.font = "50px Arial"
+  
+  ctx.fillText(scoreToPassText, gameWidth - 650, 50)
+  
 }
