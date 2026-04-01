@@ -1,4 +1,4 @@
-function paddleCollision(paddle, paddleIndex, ball) {
+function paddleCollision(paddle, paddleIndex, ball, ballIndex) {
   const paddleLeft = paddle.x - paddle.width
   const paddleRight = paddle.x + paddle.width
   const paddleTop = paddle.y - paddle.height
@@ -13,11 +13,12 @@ function paddleCollision(paddle, paddleIndex, ball) {
     && paddleTop + 25 <= ballBottom && paddleBottom - 25 >= ballTop
   ) {
     ball.xMove *= -1
+    onBounce(ballIndex)
   } else if (paddleRight >= ballLeft && paddleLeft <= ballRight 
     && paddleTop <= ballBottom && paddleBottom >= ballTop
   ) {
     ball.xMove *= -1
     ball.yMove *= -1
-    
+    onBounce(ballIndex)
   }
 }

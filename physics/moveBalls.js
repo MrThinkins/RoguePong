@@ -5,7 +5,7 @@ function moveBalls(x, y) {
     ball.y += ball.yMove * ball.speed
     for (let j = 0; j < state.game.paddles.length; j++) {
       paddle = state.game.paddles[j]
-      paddleCollision(paddle, j, ball)
+      paddleCollision(paddle, j, ball, i)
     }
     ballSideCollision(ball, i)
     
