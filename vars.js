@@ -38,8 +38,9 @@ function createSinglePlayer() {
         color: 'white',
         moveSpeed: 8
       }
-    ]
-    
+    ],
+    score: 0, 
+    scoreToPass: 10,    
   })
 }
 
