@@ -16,21 +16,35 @@
   </canvas>
 </body>
 
+<script src="start.js"></script>
 <script src="vars.js"></script>"
 <script src="state.js"></script>
-<script src="start.js"></script>
+<!-- physics -->
+<script src="physics/bounceOffset.js"></script>
+<script src="physics/ballSideCollision.js"></script>
+<script src="physics/moveBalls.js"></script>
+<script src="physics/paddleCollsion.js"></script>
+<script src="physics/movePaddle.js"></script>
+<!-- render/object -->
+<script src="render/object/drawBall.js"></script>
+<script src="render/object/drawPaddles.js"></script>
+<!-- controls -->
 <script src="controls/menuSelectMove.js"></script>
 <script src="controls/singlePlayerControl.js"></script>
 <script src="controls/singlePlayerMenuControl.js"></script>
 <script src="controls/startMenuControl.js"></script>
 <script src="controlsInput.js"></script>
-<!--  -->
+<!-- gameLogic -->
+<script src="gameLogic/onBounce.js"></script>
+<script src="gameLogic/updateScore.js"></script>
+<script src="gameLogic/roundEnd.js"></script>
+<!-- render/screen -->
 <script src="render/screen/clearScreen.js"></script>
 <script src="render/screen/renderBackground.js"></script>
 <script src="render/screen/startMenu.js"></script>
 <script src="render/screen/singlePlayer.js"></script>
 <script src="render/screen/singlePlayerPause.js"></script>
-
+<script src="render/screen/gameLoss.js"></script>
 <!--  -->
 <script src="gameLoop.js"></script>
 

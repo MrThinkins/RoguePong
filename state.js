@@ -4,6 +4,7 @@ const state = {
 
   ],
   current: createStartMenu(),
+  game: createSinglePlayer(),
   input: {
     player1: {
       up: false,

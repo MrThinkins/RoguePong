@@ -3,6 +3,8 @@ function gameLoop() {
   clearScreen()
   renderBackground()
   if (state.screen == "singlePlayer") {
+    drawPaddles()
+    moveBalls()
     singlePlayerControl()
     renderSinglePlayer()
   } else if (state.screen == "startMenu") {
@@ -11,6 +13,8 @@ function gameLoop() {
   } else if (state.screen == "singlePlayerPause") {
     singlePlayerMenuControl()
     renderSinglePlayerPause()
+  } else if (state.screen == "gameLoss") {
+    gameLoss()
   }
 
   requestAnimationFrame(gameLoop)
