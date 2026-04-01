@@ -21,7 +21,7 @@ function ballSideCollision(ball, index) {
 
   // temp code to bounce off right side
   if (ball.x - ball.size <= 0) {
-    state.screen = 'startMenu'
+    roundEnd()
     // ball.xMove *= -1
     // bounceOffset(index)
   }

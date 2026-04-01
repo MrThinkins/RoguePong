@@ -13,6 +13,8 @@ function gameLoop() {
   } else if (state.screen == "singlePlayerPause") {
     singlePlayerMenuControl()
     renderSinglePlayerPause()
+  } else if (state.screen == "gameLoss") {
+    gameLoss()
   }
 
   requestAnimationFrame(gameLoop)

@@ -13,7 +13,6 @@ function startMenuControl() {
       }
     }
   }
-  
 
   if (state.current.timeTillNextInput >= 1) {
     state.current.timeTillNextInput -= 1
