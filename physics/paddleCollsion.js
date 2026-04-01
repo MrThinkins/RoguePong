@@ -9,8 +9,9 @@ function paddleCollision(paddle, paddleIndex, ball, ballIndex) {
   const ballTop = ball.y - ball.size
   const ballBottom = ball.y + ball.size
 
+  const topBottomOffset  = 25
   if (paddleRight >= ballLeft
-    && paddleTop + 25 <= ballBottom && paddleBottom - 25 >= ballTop
+    && paddleTop + topBottomOffset <= ballBottom && paddleBottom - topBottomOffset >= ballTop
   ) {
     ball.xMove *= -1
     onBounce(ballIndex)
