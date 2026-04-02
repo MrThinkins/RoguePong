@@ -1,5 +1,10 @@
 function updateScore(type) {
   if (type == "bounce") {
-    state.game.score += 1
+    addScore(1)
   }
+}
+
+function addScore(amount) {
+  state.game.score += amount
+  state.game.finalScore += amount
 }

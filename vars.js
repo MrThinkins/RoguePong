@@ -40,7 +40,8 @@ function createSinglePlayer() {
       }
     ],
     score: 0, 
-    scoreToPass: 10,    
+    scoreToPass: 10,
+    finalScore: 0,    
   })
 }
 

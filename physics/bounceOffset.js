@@ -1,5 +1,5 @@
 function bounceOffset(ballIndex) {
-  let offset = Math.floor(Math.random() * 20)
+  let offset = Math.floor(Math.random() * 30)
   offset *= 0.02
   
   let x = Math.floor(Math.random() * 2)
