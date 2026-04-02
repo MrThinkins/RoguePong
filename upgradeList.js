@@ -5,6 +5,13 @@ const availableUpgrades = [
     function: biggerPaddle,
     toCall: "roundStart",
     descriptionText: "makes your paddle bigger"
+  },
+  {
+    name: "Stacking Points Per Bounce",
+    rarity: "legendary",
+    function: stackingPoints,
+    toCall: "onBounce",
+    descriptionText: "Every bounce gives +1 point stacking",
   }
 ]
 

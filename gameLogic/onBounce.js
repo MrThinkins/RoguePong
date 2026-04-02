@@ -7,4 +7,9 @@ function onBounce(i) {
     state.game.balls[i].speed += 0.2
   }
   updateScore('bounce')
+  for (let i = 0; i < currentUpgrades.length; i++) {
+    if (currentUpgrades[i].toCall == "onBounce") {
+      currentUpgrades[i].function()
+    }
+  }
 }

@@ -6,6 +6,7 @@ function upgrades() {
   ctx.fillText(tempText, gameWidth / 2 - 600, 300)
 
   if (state.input.player1.escape || state.input.player1.enter) {
+    addUpgrade(1)
     addUpgrade(0)
 
     state.game.score = 0
