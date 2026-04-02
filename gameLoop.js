@@ -15,6 +15,8 @@ function gameLoop() {
     renderSinglePlayerPause()
   } else if (state.screen == "gameLoss") {
     gameLoss()
+  } else if (state.screen == "upgrades") {
+    upgrades()
   }
 
   requestAnimationFrame(gameLoop)

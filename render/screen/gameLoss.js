@@ -1,6 +1,6 @@
 function gameLoss() {
   const lossText = "You Lose"
-  const lossScore = `Final Score: ${state.game.score}`
+  const lossScore = `Final Score: ${state.game.finalScore}`
   ctx.fillStyle = "red"
   ctx.font = "100px Arial"
 
