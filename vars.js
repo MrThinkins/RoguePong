@@ -77,6 +77,12 @@ function createNextSinglePlayerRound() {
       moveSpeed: 8
     }
   ]
+
+  for (let i = 0; i < currentUpgrades.length; i++) {
+    if (currentUpgrades[i].toCall == "roundStart") {
+      currentUpgrades[i].function()
+    }
+  }
 }
 
 function createSinglePlayerPause() {
