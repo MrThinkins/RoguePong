@@ -1,21 +1,21 @@
 const boxPos = [
   {
     x: 50,
-    y: 200
+    y: 180
   },
   {
-    x: gameWidth / 3 + 50,
-    y: 200
+    x: 50,
+    y: 480
   },
   {
-    x: gameWidth / 3 * 2 + 50,
-    y: 200
+    x: 50,
+    y: 780
   }
 ]
 
 const boxSize = {
-  width: 550,
-  height: 830
+  width: 1820,
+  height: 260
 }
 function upgrades() {
   const upgradeText = "Choose a upgrade"
