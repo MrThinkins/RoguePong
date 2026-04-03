@@ -35,7 +35,10 @@ function upgrades() {
     ctx.lineTo(boxPos[i].x, boxPos[i].y)
     ctx.stroke()
 
+    ctx.font = "100px Arial"
     ctx.fillText(availableUpgrades[upgradeChoicesIndexes[i]].name, 70, 300 * i + 270)
+    ctx.font = "25px Arial"
+    ctx.fillText(availableUpgrades[upgradeChoicesIndexes[i]].descriptionText, 70, 300 * i + 340)
   }
 
   if (state.input.player1.escape || state.input.player1.enter) {
