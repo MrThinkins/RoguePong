@@ -47,7 +47,12 @@ function upgrades() {
         ctx.fillStyle = "white"
     }
     ctx.beginPath()
-    ctx.lineWidth = 1
+    if (state.current.selected == i){
+      ctx.lineWidth = 10
+    } else {
+      ctx.lineWidth = 1
+    }
+    
     ctx.moveTo(boxPos[i].x, boxPos[i].y)
     ctx.lineTo(boxPos[i].x, boxPos[i].y + boxSize.height)
     ctx.lineTo(boxPos[i].x + boxSize.width, boxPos[i].y + boxSize.height)
@@ -61,18 +66,5 @@ function upgrades() {
     ctx.fillText(availableUpgrades[upgradeChoicesIndexes[i]].descriptionText, 70, 300 * i + 340)
   }
 
-  if (state.input.player1.escape || state.input.player1.enter) {
-    addUpgrade(1)
-    addUpgrade(0)
-
-    state.game.score = 0
-    state.game.scoreToPass = Math.floor(state.game.scoreToPass * 1.5)
-    console.log(`scoreToPass: ${state.game.scoreToPass}`)
-    state.screen = "singlePlayer"
-    createNextSinglePlayerRound()
-  }
-}
-
-function getUpgradeColor(upgradeIndex) {
-
+  upgradeMenuControl()
 }

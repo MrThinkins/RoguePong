@@ -91,3 +91,10 @@ function createSinglePlayerPause() {
     timeTillNextInput: menuInputDelay,
   })
 }
+
+function createUpgradeMenuControls() {
+  return ({
+    selected: 0,
+    timeTillNextInput: menuInputDelay,
+  })
+}
