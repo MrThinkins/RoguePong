@@ -25,6 +25,7 @@ function upgrades() {
   ctx.fillText(upgradeText, gameWidth / 2 - 400, 120)
 
   ctx.strokeStyle ="white"
+  ctx.fillStyle = "white"
   for (let i = 0; i < 3; i++) {
     ctx.beginPath()
     ctx.moveTo(boxPos[i].x, boxPos[i].y)
@@ -33,6 +34,8 @@ function upgrades() {
     ctx.lineTo(boxPos[i].x + boxSize.width, boxPos[i].y)
     ctx.lineTo(boxPos[i].x, boxPos[i].y)
     ctx.stroke()
+
+    ctx.fillText(availableUpgrades[upgradeChoicesIndexes[i]].name, 70, 300 * i + 270)
   }
 
   if (state.input.player1.escape || state.input.player1.enter) {

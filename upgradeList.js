@@ -17,6 +17,7 @@ const availableUpgrades = [
 
 const currentUpgrades = []
 
+
 /**
  * {
  *  name: "name",
@@ -26,3 +27,16 @@ const currentUpgrades = []
  *  descriptionText: "effect description here"  
  * }
  */
+
+function createUpgradeChoices() {
+  const tempUpgradeChoicesIndexes = []
+  const maxLength = availableUpgrades.length >= 2 ? 2 : availableUpgrades.length
+
+  for (let i = 0; i <= maxLength; i++) {
+    const upgradeIndex = Math.floor(Math.random() * availableUpgrades.length)
+    tempUpgradeChoicesIndexes.push(upgradeIndex)
+  }
+  return tempUpgradeChoicesIndexes
+}
+
+let upgradeChoicesIndexes = createUpgradeChoices()
