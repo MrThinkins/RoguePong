@@ -24,10 +24,30 @@ function upgrades() {
 
   ctx.fillText(upgradeText, gameWidth / 2 - 400, 120)
 
-  ctx.strokeStyle ="white"
-  ctx.fillStyle = "white"
   for (let i = 0; i < 3; i++) {
+    switch (availableUpgrades[upgradeChoicesIndexes[i]].rarity) {
+      case "uncommon":
+        ctx.strokeStyle = "green"
+        ctx.fillStyle = "green"
+        break
+      case "rare":
+        ctx.strokeStyle = "blue"
+        ctx.fillStyle = "blue"
+        break
+      case "very rare":
+        ctx.strokeStyle = "purple"
+        ctx.fillStyle = "purple"
+        break
+      case "legendary":
+        ctx.strokeStyle = "gold"
+        ctx.fillStyle = "gold"
+        break
+      default:
+        ctx.strokeStyle = "white"
+        ctx.fillStyle = "white"
+    }
     ctx.beginPath()
+    ctx.lineWidth = 1
     ctx.moveTo(boxPos[i].x, boxPos[i].y)
     ctx.lineTo(boxPos[i].x, boxPos[i].y + boxSize.height)
     ctx.lineTo(boxPos[i].x + boxSize.width, boxPos[i].y + boxSize.height)
@@ -51,4 +71,8 @@ function upgrades() {
     state.screen = "singlePlayer"
     createNextSinglePlayerRound()
   }
+}
+
+function getUpgradeColor(upgradeIndex) {
+
 }
