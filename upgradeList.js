@@ -40,6 +40,13 @@ const availableUpgrades = [
     function: plusEightBounce,
     toCall: "onBounce",
     descriptionText: "+8 points per bounce"
+  },
+  {
+    name: "+16 Points On Bounce",
+    rarity: "legendary",
+    function: plusSixteenBounce,
+    toCall: "onBounce",
+    descriptionText: "+16 points per bounce"
   }
 ]
 
