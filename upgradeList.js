@@ -4,7 +4,14 @@ const availableUpgrades = [
     rarity: "uncommon",
     function: biggerPaddle,
     toCall: "roundStart",
-    descriptionText: "makes your paddle bigger"
+    descriptionText: "Makes your paddle bigger"
+  },
+  {
+    name: "Faster Move Speed",
+    rarity: "common",
+    function: fasterMoveSpeed,
+    toCall: "roundStart",
+    descriptionText: "Makes your paddle move faster"
   },
   {
     name: "Stacking Points Per Bounce",
