@@ -12,6 +12,13 @@ const availableUpgrades = [
     function: stackingPoints,
     toCall: "onBounce",
     descriptionText: "Every bounce gives +1 point stacking",
+  },
+  {
+    name: "+1 Point On Bounce",
+    rarity: "common",
+    function: plusOneBounce,
+    toCall: "onBounce",
+    descriptionText: "+1 point per bounce"
   }
 ]
 
