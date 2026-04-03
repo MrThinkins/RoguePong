@@ -1,12 +1,9 @@
 function upgradeMenuControl() { 
   if (state.current.timeTillNextInput <= 0) {
-    menuSelectMove(2)
-
-    console.log('stuff')
+    menuSelectMove(upgradeChoicesIndexes.length - 1)
 
     if (state.input.player1.escape || state.input.player1.enter) {
-      addUpgrade(1)
-      addUpgrade(0)
+      addUpgrade(upgradeChoicesIndexes[state.current.selected])
 
       state.game.score = 0
       state.game.scoreToPass = Math.floor(state.game.scoreToPass * 1.5)

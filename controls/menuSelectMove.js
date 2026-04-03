@@ -1,7 +1,7 @@
 function menuSelectMove(menuSize) {
    if (state.input.player1.up) {
       if (state.current.selected <= 0) {
-        state.current.selected = 2
+        state.current.selected = menuSize
       } else {
         state.current.selected -= 1
       }

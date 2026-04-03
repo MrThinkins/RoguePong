@@ -1,7 +1,7 @@
 const availableUpgrades = [
   {
     name: "Bigger Paddle",
-    rarity: "common",
+    rarity: "uncommon",
     function: biggerPaddle,
     toCall: "roundStart",
     descriptionText: "makes your paddle bigger"
@@ -30,13 +30,12 @@ const currentUpgrades = []
 
 function createUpgradeChoices() {
   const tempUpgradeChoicesIndexes = []
-  const maxLength = availableUpgrades.length >= 2 ? 2 : availableUpgrades.length
-
-  for (let i = 0; i <= maxLength; i++) {
+  for (let i = 0; i < 3; i++) {
     const upgradeIndex = Math.floor(Math.random() * availableUpgrades.length)
     tempUpgradeChoicesIndexes.push(upgradeIndex)
   }
-  return tempUpgradeChoicesIndexes
+  upgradeChoicesIndexes = tempUpgradeChoicesIndexes
 }
 
-let upgradeChoicesIndexes = createUpgradeChoices()
+let upgradeChoicesIndexes
+createUpgradeChoices()

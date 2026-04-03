@@ -24,7 +24,7 @@ function upgrades() {
 
   ctx.fillText(upgradeText, gameWidth / 2 - 400, 120)
 
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < upgradeChoicesIndexes.length; i++) {
     switch (availableUpgrades[upgradeChoicesIndexes[i]].rarity) {
       case "uncommon":
         ctx.strokeStyle = "green"
