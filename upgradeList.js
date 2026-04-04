@@ -1,12 +1,5 @@
 const availableUpgrades = [
   {
-    name: "Bigger Paddle",
-    rarity: "uncommon",
-    function: biggerPaddle,
-    toCall: "roundStart",
-    descriptionText: "Makes your paddle bigger"
-  },
-  {
     name: "Faster Move Speed",
     rarity: "common",
     function: fasterMoveSpeed,
@@ -26,6 +19,13 @@ const availableUpgrades = [
     function: plusOneBounce,
     toCall: "onBounce",
     descriptionText: "+1 point per bounce"
+  },
+  {
+    name: "Bigger Paddle",
+    rarity: "uncommon",
+    function: biggerPaddle,
+    toCall: "roundStart",
+    descriptionText: "Makes your paddle bigger"
   },
   {
     name: "Lots More Luck",
