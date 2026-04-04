@@ -40,7 +40,7 @@ function createSinglePlayer() {
       }
     ],
     stats: {
-      luck: 2000  // default should be 100
+      luck: 200  // default should be 100
     },
     score: 0, 
     scoreToPass: 10,
