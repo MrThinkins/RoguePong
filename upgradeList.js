@@ -54,6 +54,13 @@ const availableUpgrades = [
     function: plusSixteenBounce,
     toCall: "onBounce",
     descriptionText: "+16 points per bounce"
+  },
+  {
+    name: "x2 score",
+    rarity: "very rare",
+    function: timesTwoEnd,
+    toCall: "roundEnd",
+    descriptionText: "At end of round double score"
   }
 ]
 
