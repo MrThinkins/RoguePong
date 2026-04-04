@@ -40,7 +40,7 @@ function createSinglePlayer() {
       }
     ],
     stats: {
-      luck:10000  // default should be 100
+      luck: 10000  // default should be 100
     },
     score: 0, 
     scoreToPass: 10,
@@ -82,7 +82,7 @@ function createNextSinglePlayerRound() {
   ]
 
   for (let i = 0; i < currentUpgrades.length; i++) {
-    if (currentUpgrades[i].toCall == "roundStart") {
+    if (currentUpgrades[i].toCall == "roundStart" || currentUpgrades[i].toCall == "once") {
       currentUpgrades[i].function()
     }
   }

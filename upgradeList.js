@@ -14,6 +14,13 @@ const availableUpgrades = [
     descriptionText: "Makes your paddle move faster"
   },
   {
+    name: "More Luck",
+    rarity: "common",
+    function: moreLuck,
+    toCall: "once",
+    descriptionText: "Increases your luck by a small amount"
+  },
+  {
     name: "+1 Point On Bounce",
     rarity: "common",
     function: plusOneBounce,
