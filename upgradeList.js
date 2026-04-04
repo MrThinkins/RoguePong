@@ -68,6 +68,13 @@ const availableUpgrades = [
     function: timesThreeEnd,
     toCall: "roundEnd",
     descriptionText: "At end of round triple score"
+  },
+  {
+    name: "x4 Score",
+    rarity: "legendary",
+    function: timesFourEnd,
+    toCall: "roundEnd",
+    descriptionText: "At end of round quadruple score"
   }
 ]
 
