@@ -39,6 +39,9 @@ function createSinglePlayer() {
         moveSpeed: 8
       }
     ],
+    stats: {
+      luck:10000  // default should be 100
+    },
     score: 0, 
     scoreToPass: 10,
     finalScore: 0,    
