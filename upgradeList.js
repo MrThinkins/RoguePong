@@ -28,6 +28,13 @@ const availableUpgrades = [
     descriptionText: "+1 point per bounce"
   },
   {
+    name: "Lots More Luck",
+    rarity: "uncommon",
+    function: lotsMoreLuck,
+    toCall: "once",
+    descriptionText: "Increases your luck by a lot."
+  },
+  {
     name: "+2 Points On Bounce",
     rarity: "uncommon",
     function: plusTwoBounce,
@@ -106,14 +113,14 @@ function createUpgradeChoices() {
     // generate rarity base on luck
     let rarityNumber = Math.floor(Math.random() * 10000)
     let rarity = "common"
-    if (rarityNumber < 2000 && state.game.stats.luck) {
+    if (rarityNumber < 2000 && state.game.stats.luck > rarityNumber) {
       rarity = "legendary"
-    } else if (rarityNumber < 4000 && state.game.stats.luck * 2)
+    } else if (rarityNumber < 4000 && state.game.stats.luck * 2 > rarityNumber)
     {
       rarity = "very rare"
-    } else if (rarityNumber < 6000 && state.game.stats.luck * 4) {
+    } else if (rarityNumber < 6000 && state.game.stats.luck * 4 > rarityNumber) {
       rarity = "rare"
-    } else if (rarityNumber < 8000 && state.game.stats.luck * 8) {
+    } else if (rarityNumber < 8000 && state.game.stats.luck * 8 > rarityNumber) {
       rarity = "uncommon"
     }
 
