@@ -21,6 +21,20 @@ const availableUpgrades = [
     descriptionText: "+1 point per bounce"
   },
   {
+    name: "10 Points On Start",
+    rarity: "common",
+    function: plusTenStart,
+    toCall: "roundStart",
+    descriptionText: "+10 points at the start of a round"
+  },
+  {
+    name: "50 Points On Start",
+    rarity: "uncommon",
+    function: plusFiftyStart,
+    toCall: "roundStart",
+    descriptionText: "+50 points at the start of a round"
+  },
+  {
     name: "Bigger Paddle",
     rarity: "uncommon",
     function: biggerPaddle,
@@ -32,7 +46,7 @@ const availableUpgrades = [
     rarity: "uncommon",
     function: lotsMoreLuck,
     toCall: "once",
-    descriptionText: "Increases your luck by a lot."
+    descriptionText: "Increases your luck by a lot"
   },
   {
     name: "+2 Points On Bounce",
@@ -42,12 +56,20 @@ const availableUpgrades = [
     descriptionText: "+2 points per bounce"
   },
   {
+    name: "250 Points On Start",
+    rarity: "rare",
+    function: plusTwoFiftyStart,
+    toCall: "roundStart",
+    descriptionText: "+250 points at the start of a round"
+  },
+  {
     name: "+4 Points On Bounce",
     rarity: "rare",
     function: plusFourBounce,
     toCall: "onBounce",
     descriptionText: "+4 points per bounce"
   },
+  // x0.1 points on bounce
   {
     name: "+8 Points On Bounce",
     rarity: "very rare",
@@ -61,6 +83,20 @@ const availableUpgrades = [
     function: timesTwoEnd,
     toCall: "roundEnd",
     descriptionText: "At end of round double score"
+  },
+  {
+    name: "+1000 Points On Start",
+    rarity: "very rare",
+    function: plusOneThousandStart,
+    toCall: "roundStart",
+    descriptionText: "+1000 points at start of round",
+  },
+  {
+    name: "+5000 Points On Start",
+    rarity: "legendary",
+    function: plusFiveThousandStart,
+    toCall: "roundStart",
+    descriptionText: "+5000 points at start of round",
   },
   {
     name: "Stacking Points Per Bounce",
