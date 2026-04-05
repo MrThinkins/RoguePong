@@ -91,6 +91,13 @@ const availableUpgrades = [
     descriptionText: "+1000 points at start of round",
   },
   {
+    name: "Random Points On Bounce",
+    rarity: "very rare",
+    function: randomPointsOnBounce,
+    toCall: "onBounce",
+    descriptionText: "Get a random amount of points on bounce"
+  },
+  {
     name: "Little Mult on Bounce",
     rarity: "very rare",
     function: pointZeroOneMultOnBounce,
