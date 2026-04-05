@@ -69,7 +69,6 @@ const availableUpgrades = [
     toCall: "onBounce",
     descriptionText: "+4 points per bounce"
   },
-  // x0.1 points on bounce
   {
     name: "+8 Points On Bounce",
     rarity: "very rare",
@@ -125,7 +124,14 @@ const availableUpgrades = [
     function: timesFourEnd,
     toCall: "roundEnd",
     descriptionText: "At end of round quadruple score"
-  }
+  },
+  {
+    name: "Mult On Bounce",
+    rarity: "legendary",
+    function: pointOneMultOnBounce,
+    toCall: "onBounce",
+    descriptionText: "Multiply your round score by 1.1 on bounce"
+  },
 ]
 
 const currentUpgrades = []
