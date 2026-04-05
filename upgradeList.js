@@ -91,6 +91,13 @@ const availableUpgrades = [
     descriptionText: "+1000 points at start of round",
   },
   {
+    name: "Little Mult on Bounce",
+    rarity: "very rare",
+    function: pointZeroOneMultOnBounce,
+    toCall: "onBounce",
+    descriptionText: "Multiply your round score by 1.01 on bounce"
+  },
+  {
     name: "+5000 Points On Start",
     rarity: "legendary",
     function: plusFiveThousandStart,
