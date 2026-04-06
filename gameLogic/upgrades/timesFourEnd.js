@@ -1,4 +1,3 @@
 function timesFourEnd() {
-  state.game.score *= 4
-  state.game.finalScore += state.game.score
+  addScore(state.game.score *= 4)
 }
