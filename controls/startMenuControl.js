@@ -10,7 +10,10 @@ function startMenuControl() {
       } else if (state.current.selected == 1) {
         // state.screen = "twoPlayer"
       } else if (state.current.selected == 2) {
-        state.screen = "startOptions"
+        state.screen = "options"
+        state.current = createOptionMenu()
+        state.lastScreen = "startMenu"
+        state.lastScreenFunction = createStartMenu
       }
     }
   }

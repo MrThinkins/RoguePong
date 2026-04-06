@@ -1,6 +1,7 @@
 const state = {
   screen: "options",
   lastScreen: "startMenu",
+  lastScreenFunction: createStartMenu,
   players: [
 
   ],

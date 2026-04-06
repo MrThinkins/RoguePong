@@ -43,6 +43,9 @@ function renderOption() {
         state.current.timeTillNextInput = menuInputDelay
         bounceSound.play(1, state.soundEffect / 100)
       }
+    } else if (state.current.selected == 2 && state.input.player1.enter) {
+      state.screen = state.lastScreen
+      state.current = state.lastScreenFunction()
     }
     menuSelectMove(2)
   }
