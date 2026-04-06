@@ -34,7 +34,13 @@ function renderOption() {
 
   if (state.current.timeTillNextInput <= 0) {
     if (state.current.selected == 0) {
-
+      if (state.input.player1.right && state.soundEffect < 100) {
+        state.soundEffect += 10
+        state.current.timeTillNextInput = menuInputDelay
+      } else if (state.input.player1.left && state.soundEffect > 0) {
+        state.soundEffect -= 10
+        state.current.timeTillNextInput = menuInputDelay
+      }
     }
     menuSelectMove(2)
   }
