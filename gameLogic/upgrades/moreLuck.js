@@ -1,3 +1,3 @@
 function moreLuck() {
-  state.game.stats.luck += 10
+  state.game.stats.luck += 20
 }
