@@ -1,6 +1,6 @@
-function Sound(src, volume = 0.8, pitch = 1, maxStreams = 24) {
+function Sound(src, tempVolume = 0.8, pitch = 1, maxStreams = 24) {
   this.src = src
-  this.volume = volume
+  this.volume = tempVolume
   this.streams = []
   for (let i = 0; i < maxStreams; i++ ) {
     const stream = document.createElement("audio")
@@ -17,7 +17,7 @@ function Sound(src, volume = 0.8, pitch = 1, maxStreams = 24) {
   this.pitchVar = pitch
   this.loop = false
 
-  this.play = function(playPitch = 1) {
+  this.play = function(playPitch = 1, volume = 0.8) {
     const stream = this.streams[this.currentStream]
 
     stream.pause()
@@ -25,7 +25,7 @@ function Sound(src, volume = 0.8, pitch = 1, maxStreams = 24) {
 
     stream.playbackRate = this.pitchVar * playPitch
     
-    stream.volume = this.volume
+    stream.volume = volume
 
     stream.loop = this.loop
     stream.currentTime = 0

@@ -1,5 +1,5 @@
 const state = {
-  screen: "startMenu",
+  screen: "options",
   players: [
 
   ],
@@ -12,5 +12,6 @@ const state = {
       enter: false,
       escape: false,
     }
-  }
+  },
+  soundEffect: 80, 
 }

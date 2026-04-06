@@ -106,3 +106,10 @@ function createUpgradeMenuControls() {
     timeTillNextInput: menuInputDelay,
   })
 }
+
+function createOptionMenu() {
+  return ({
+    selected: 0,
+    timeTillNextInput: menuInputDelay,
+  })
+}
