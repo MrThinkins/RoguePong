@@ -4,6 +4,7 @@ function singlePlayerMenuControl() {
     menuSelectMove(2)
 
     if (state.input.player1.enter) {
+      bounceSound.play(0.5)
       if (state.current.selected == 0) {
         state.screen = "singlePlayer"
       } else if (state.current.selected == 2) {

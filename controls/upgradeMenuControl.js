@@ -3,6 +3,7 @@ function upgradeMenuControl() {
     menuSelectMove(upgradeChoicesIndexes.length - 1)
 
     if (state.input.player1.escape || state.input.player1.enter) {
+      bounceSound.play(2)
       addUpgrade(upgradeChoicesIndexes[state.current.selected])
 
       state.game.score = 0

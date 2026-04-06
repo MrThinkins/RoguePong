@@ -6,4 +6,3 @@ const ctx = canvas.getContext('2d')
 
 canvas.width = gameWidth
 canvas.height = gameHeight
-
