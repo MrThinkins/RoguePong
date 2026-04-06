@@ -3,7 +3,7 @@ function startMenuControl() {
     menuSelectMove(2)
 
     if (state.input.player1.enter) {
-      bounceSound.play(0.5)
+      bounceSound.play(0.5, state.soundEffect / 100)
       if (state.current.selected == 0) {
         state.screen = "singlePlayer"
         state.game = createSinglePlayer()

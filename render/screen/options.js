@@ -37,9 +37,11 @@ function renderOption() {
       if (state.input.player1.right && state.soundEffect < 100) {
         state.soundEffect += 10
         state.current.timeTillNextInput = menuInputDelay
+        bounceSound.play(1, state.soundEffect / 100)
       } else if (state.input.player1.left && state.soundEffect > 0) {
         state.soundEffect -= 10
         state.current.timeTillNextInput = menuInputDelay
+        bounceSound.play(1, state.soundEffect / 100)
       }
     }
     menuSelectMove(2)
