@@ -39,6 +39,9 @@ function createSinglePlayer() {
         moveSpeed: 8
       }
     ],
+    stats: {
+      luck: 200  // default should be 100
+    },
     score: 0, 
     scoreToPass: 10,
     finalScore: 0,    
@@ -77,9 +80,27 @@ function createNextSinglePlayerRound() {
       moveSpeed: 8
     }
   ]
+
+  for (let i = 0; i < currentUpgrades.length; i++) {
+    if (currentUpgrades[i].toCall == "roundStart" || currentUpgrades[i].toCall == "once") {
+      currentUpgrades[i].function()
+      if (currentUpgrades[i].toCall == "once") {
+        currentUpgrades.splice(i, 1)
+        i--
+        console.log(`currentUpgrades.length: ${currentUpgrades.length}`)
+      }
+    }
+  }
 }
 
 function createSinglePlayerPause() {
+  return ({
+    selected: 0,
+    timeTillNextInput: menuInputDelay,
+  })
+}
+
+function createUpgradeMenuControls() {
   return ({
     selected: 0,
     timeTillNextInput: menuInputDelay,
