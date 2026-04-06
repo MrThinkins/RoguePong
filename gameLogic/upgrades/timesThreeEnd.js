@@ -1,3 +1,3 @@
 function timesThreeEnd() {
-  addScore(state.game.score *= 3)
+  addScore(state.game.score * 2)
 }
