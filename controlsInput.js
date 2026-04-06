@@ -20,6 +20,20 @@ function controlsInput() {
   } else {
     state.input.player1.down = false
   }
+
+  if (input.keys.has('KeyA')) {
+    state.input.player1.left = true
+  } else {
+    state.input.player1.left = false
+  }
+  // console.log(`left: ${state.input.player1.left}`)
+  if (input.keys.has('KeyD')) {
+    state.input.player1.right = true
+  } else {
+    state.input.player1.right = false
+  }
+  // console.log(`right: ${state.input.player1.right}`)
+
   if (input.keys.has("Enter")) {
     state.input.player1.enter = true
   } else {

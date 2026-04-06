@@ -9,6 +9,8 @@ const state = {
     player1: {
       up: false,
       down: false,
+      left: false,
+      right: false,
       enter: false,
       escape: false,
     }
