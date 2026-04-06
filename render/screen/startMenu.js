@@ -23,7 +23,8 @@ function renderStartMenu() {
   if (state.current.selected == 0) {
     ctx.fillRect(textPos.singlePlayer.x - 15, textPos.singlePlayer.y + 25, 475, -100)
   } else if (state.current.selected == 1) {
-    ctx.fillRect(textPos.twoPlayer.x - 15, textPos.twoPlayer.y + 25, 410, -100)
+    ctx.fillRect(textPos.twoPlayer.x - 15 - 300, textPos.twoPlayer.y + 25, 1030, -100)
+    // ctx.fillRect(textPos.twoPlayer.x - 15, textPos.twoPlayer.y + 25, 410, -100)
   } else if (state.current.selected == 2) {
     ctx.fillRect(textPos.options.x - 15, textPos.options.y + 25, 290, -100)
   }
@@ -31,6 +32,7 @@ function renderStartMenu() {
   ctx.fillStyle = "white"
   ctx.font = "75px Arial"
   ctx.fillText("Single Player", textPos.singlePlayer.x, textPos.singlePlayer.y)
-  ctx.fillText("Two Player", textPos.twoPlayer.x, textPos.twoPlayer.y)
+  ctx.fillText("Two Player (not implemented)", textPos.twoPlayer.x - 300, textPos.twoPlayer.y)
+  // ctx.fillText("Two Player", textPos.twoPlayer.x, textPos.twoPlayer.y)
   ctx.fillText("Options", textPos.options.x, textPos.options.y)
 }
