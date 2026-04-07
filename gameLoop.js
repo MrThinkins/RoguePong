@@ -17,6 +17,8 @@ function gameLoop() {
     gameLoss()
   } else if (state.screen == "upgrades") {
     upgrades()
+  } else if (state.screen == "options") {
+    renderOption()
   }
 
   requestAnimationFrame(gameLoop)
