@@ -47,3 +47,15 @@ function Sound(src, tempVolume = 0.8, pitch = 1, maxStreams = 24) {
 }
 
 const bounceSound = new Sound('assets/bounce.wav')
+
+const musicSound = new Sound('assets/roguePong.mp3')
+
+let musicStart = false  
+
+function startMusic() {
+  if (!musicStart) {
+    musicStart = true
+    // musicSound.play(1, state.musicVolume / 100)
+    musicSound.play()
+  }
+}

@@ -1,5 +1,6 @@
 function menuSelectMove(menuSize) {
-  
+    startMusic()
+
    if (state.input.player1.up) {
       bounceSound.play(1, state.soundEffect / 100)
       if (state.current.selected <= 0) {

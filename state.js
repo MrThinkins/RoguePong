@@ -18,4 +18,5 @@ const state = {
     }
   },
   soundEffect: 80, 
+  musicVolume: 80
 }

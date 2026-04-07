@@ -1,5 +1,6 @@
 function startMenuControl() {
   if (state.current.timeTillNextInput <= 0) {
+
     menuSelectMove(2)
 
     if (state.input.player1.enter) {
