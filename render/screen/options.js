@@ -32,6 +32,9 @@ function renderOption() {
   ctx.fillText("Music Volume", gameWidth / 2 - 280, 625)
   ctx.fillRect(soundEffectPos.x, soundEffectPos.y + 200, soundEffectPos.xEnd, soundEffectPos.yEnd)
 
+  const startMusic = soundEffectPos.x - 25 + (soundEffectPos.xEnd * state.musicVolume / 100)
+  ctx.fillRect(startMusic, soundEffectPos.y - 20 + 200, 50, 50)
+
   if (state.current.timeTillNextInput <= 0) {
     if (state.current.selected == 0) {
       if (state.input.player1.right && state.soundEffect < 100) {
@@ -42,6 +45,16 @@ function renderOption() {
         state.soundEffect -= 10
         state.current.timeTillNextInput = menuInputDelay
         bounceSound.play(1, state.soundEffect / 100)
+      }
+    } else if (state.current.selected == 1) {
+      if (state.input.player1.left && state.musicVolume > 0) {
+        state.musicVolume -= 10
+        state.current.timeTillNextInput = menuInputDelay
+        musicSound.setVolume(state.musicVolume / 100)
+      } else if (state.input.player1.right && state.musicVolume < 100) {
+        state.musicVolume += 10
+        state.current.timeTillNextInput = menuInputDelay
+        musicSound.setVolume(state.musicVolume / 100)
       }
     } else if (state.current.selected == 2 && state.input.player1.enter) {
       state.screen = state.lastScreen
